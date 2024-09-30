@@ -1,0 +1,285 @@
+
+
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...} */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(54, 53, 53);
+    font-family: "Roboto", sans-serif;
+    border:3px solid yellow;
+    border-top: none; 
+    margin: 0;
+
+}
+
+.nav-logo{
+    color: rgb(231, 187, 106);
+    letter-spacing:5px ;
+}
+
+
+.nav-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background-color:rgb(54, 53, 53) ; */
+    /* border-bottom: 1px solid gray */
+    backdrop-filter: blur(10px);
+    
+}
+
+.navber{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    
+ 
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+ul li a:hover{
+    color: rgb(116, 109, 109);
+}
+
+.nav-search{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    border: 1px solid rgb(54, 53, 53);
+
+}
+.nav-search{
+    position: relative;
+}
+.nav-search i{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+.hero-section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+.hero-heading{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    justify-content: center;
+}
+.hero-heading span{
+    font-size: 50px;
+    color: rgb(231, 187, 106);
+}
+
+
+.hero-button{
+    padding: 7px;
+    border-radius: 5px;
+    color: rgb(231, 187, 106);
+    background: transparent;
+    border: 2px solid rgb(231, 187, 106);
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.hero-button:hover{
+    background-color: rgb(224, 158, 72);
+    color: rgb(54, 53, 53);
+    font-weight: bold;
+    transform: ease;
+    border: 2px solid rgb(54, 53, 53);
+}
+.hero-right img{
+    
+    width: 20rem;
+    margin-top: 3rem;
+    rotate: ;
+
+}
+
+/* .........about...... */
+
+.about-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.about-head{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+    
+}
+.about-para{
+    color: white;
+    line-height:2rem;
+    letter-spacing:1px;
+    font-weight: 300;
+    position: relative;
+    margin-left: 4rem;
+    text-align: justify;
+}
+.highlight{
+    width: 4rem;
+    height: 2px;
+    background: rgb(231, 187, 106);
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: -4rem;
+
+    
+}
+.para-hilighet{
+    color: rgb(231, 187, 106);
+    font-weight: bold;
+}
+/* ..........about done..... */
+
+/* .....my skils......... */
+
+
+.skil-section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+
+.skil-head{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+
+}
+
+.skills{
+    background-color: rgb(47, 37, 37) ;
+    width: 20%;
+    height: auto;
+    border-radius: 5px ;
+
+}
+.skills img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    
+    
+}
+.skil-name{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.skil-fstline{
+    display: flex;
+    gap: 6%;
+    margin: 0 8%;
+}
+
+.skil-2ndline{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 3rem 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 778px) {
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    }
+    .hero-section{
+        width: 65%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        
+    }
+    .hero-left{
+        flex: 1;
+        
+    }
+    .hero-heading{
+        text-align: left;
+        justify-content: center;
+    }
+    .hero-button{
+        margin: 0;
+    }
+    
+    }
