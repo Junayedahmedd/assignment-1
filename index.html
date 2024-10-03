@@ -30,9 +30,9 @@
             </div>
             <div class="nav-link">
                 <ul class="nav-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-search">
@@ -46,9 +46,7 @@
 
     <!-- hero section -->
 
-   
 
-   
 
    <div class="hero-section">
 
@@ -58,7 +56,7 @@
             MERN Steak <br>
             Web Developer
         </h1>
-        <div class="contact-btn">
+        <div class="contact-btn" >
             <button class="hero-button">Contact Me</button>
         </div>
     </div>
@@ -69,8 +67,9 @@
 
    </div>
 
+
    <!-- about  -->
-    <div class="about-section">
+    <div class="about-section" id="about">
         <h2 class="about-head">About</h2>
         <div class="about-para">
             <span class="highlight"></span>
@@ -78,10 +77,14 @@
         </div>
     </div>
 
+    <!-- about end -->
+
 
 
 
     <!-- hero section end -->
+
+
      <!-- skils -->
 
      <div class="skil-section">
@@ -124,6 +127,71 @@
 
     
      </div>
+
+     <!-- skils end -->
+
+
+     <!-- portfolio -->
+
+
+     <section id="portfolio" class="portfolio-section">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/pretfolio-1.png" alt="Project 1">
+                <div class="portfolio-info">
+                    <h3>Project 1</h3>
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/portfolio-2.png" alt="Project 2">
+                <div class="portfolio-info">
+                    <h3>Project 2</h3>
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/portfolio-3.jpg" alt="Project 3">
+                <div class="portfolio-info">
+                    <h3>Project 3</h3>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- portfolio end -->
+
+     <!-- contact -->
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your E-mail">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required>
+            </textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+         <!-- contact end-->
+
+
+     <!-- Footer Section -->
+     <footer>
+        <p>&copy; 2024 My Portfolio | <span class="footer-logo">JND</span> | All Rights Reserved</p>
+    </footer>
+
+     <!-- Footer Section end-->
 
 </body>
 </html>

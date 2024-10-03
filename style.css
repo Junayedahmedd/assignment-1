@@ -1,27 +1,3 @@
-
-
-/* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-    /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...} */
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -50,9 +26,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    /* background-color:rgb(54, 53, 53) ; */
-    /* border-bottom: 1px solid gray */
     backdrop-filter: blur(10px);
     
 }
@@ -80,7 +53,7 @@ ul li a{
 }
 
 ul li a:hover{
-    color: rgb(116, 109, 109);
+    color: rgb(231, 187, 106);
 }
 
 .nav-search{
@@ -192,8 +165,11 @@ ul li a:hover{
 
 .skil-section{
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1rem;
+    background-color:  rgb(112, 112, 112)
+    ;
+    border-radius: 10px;
     
 }
 
@@ -202,7 +178,7 @@ ul li a:hover{
     color: white;
     font-weight: bold;
     letter-spacing: 2px;
-    margin: 2rem 0;
+    margin:1rem 0;
 
 }
 
@@ -244,6 +220,126 @@ ul li a:hover{
 }
 
 
+/* portfolio */
+
+.portfolio-section {
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(112, 112, 112);
+}
+
+.portfolio-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+    color: white;
+}
+
+
+.portfolio-item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    margin-top: 1rem;
+}
+
+.portfolio-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Contact Section */
+
+
+.contact-section {
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border:1px solid rgb(231, 187, 106);
+    border-radius: 5px;
+    outline-style: none;
+}
+
+form button {
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: rgb(231, 187, 106);
+    background: transparent;
+    border: 2px solid rgb(231, 187, 106);
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: rgb(224, 158, 72);
+    color: rgb(54, 53, 53);
+    font-weight: bold;
+    transform: ease;
+    border: 2px solid rgb(54, 53, 53);
+}
+
+/* footer section  */
+
+footer {
+    padding: 1rem;
+    background-color:  rgb(112, 112, 112);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+.footer-logo{
+    color: rgb(231, 187, 106);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
 
 
@@ -255,6 +351,7 @@ ul li a:hover{
 
 
 
+/* responsive section */
 
 
 
@@ -281,5 +378,20 @@ ul li a:hover{
     .hero-button{
         margin: 0;
     }
+
+    .portfolio-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    } 
+
+    .portfolio-item {
+        width: 30%;
+        margin-bottom: 2rem;
+    }
     
     }
+
+
+
+    /*........ project end ........... */
